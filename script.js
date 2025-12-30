@@ -205,6 +205,7 @@ function initMoments() {
         "20250706_154925.jpg",
         "20250706_154959.jpg",
         "_DSC6021.JPG",
+        "_DSC6021.JPG",
         "IMG_20241111_184837.jpg",
         "20250912_122210.jpg",
         "20250912_132703.jpg",
@@ -284,5 +285,6 @@ const greetingCard = document.getElementById('greeting-card');
 greetingCard.addEventListener('click', () => {
     greetingCard.classList.toggle('open');
 });
+
 
 
