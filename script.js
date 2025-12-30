@@ -285,3 +285,4 @@ greetingCard.addEventListener('click', () => {
     greetingCard.classList.toggle('open');
 });
 
+
