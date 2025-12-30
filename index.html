@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Journey 2025</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Outfit:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <audio id="bg-music" loop>
+        <source src="bg-music.mp3" type="audio/mpeg">
+    </audio>
+    <button id="music-toggle" class="music-btn">🔇</button>
+
+    <div id="floating-hearts"></div>
+    <div class="main-container">
+
+        <!-- STAGE 1: Press & Hold Heart -->
+        <div id="stage-heart" class="stage active">
+            <div class="heart-hold-container">
+                <h2>Hold the Heart ❤️</h2>
+                <div class="heart-circle">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="bg-ring" cx="50" cy="50" r="45"></circle>
+                        <circle class="progress-ring" cx="50" cy="50" r="45"></circle>
+                    </svg>
+                    <div class="center-heart">❤️</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- STAGE 2: Card Stack -->
+        <div id="stage-cards" class="stage">
+            <div class="cards-stack-container" id="cards-stack">
+                <!-- Cards will be injected by JS -->
+            </div>
+            <p class="instruction">Tap cards to clear the way!</p>
+        </div>
+
+        <!-- STAGE 3: Gift Box -->
+        <div id="stage-gift" class="stage">
+            <div class="gift-box" id="gift-box-trigger">
+                <div class="lid"></div>
+                <div class="box"></div>
+            </div>
+            <p>Open your present! 🎁</p>
+        </div>
+
+        <!-- STAGE 4: Coupon -->
+        <div id="stage-coupon" class="stage">
+            <div class="coupon-ticket" id="coupon-trigger">
+                <div class="coupon-left">
+                    <h3>VOUCHER</h3>
+                    <p>Admit One</p>
+                </div>
+                <div class="coupon-right">
+                    <h2>Journey of Moments</h2>
+                    <p class="small">Click to redeem</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- STAGE 5: Moments (Vertical) -->
+        <div id="stage-moments" class="stage">
+            <h2>Moments of 2025</h2>
+            <div class="gallery-container" id="gallery-list">
+                <!-- Images injected by JS -->
+                <!-- Button injected by JS to ensure it's at bottom -->
+            </div>
+        </div>
+
+        <!-- STAGE 6: Greeting Card -->
+        <div id="stage-greeting" class="stage">
+            <div class="greeting-card-wrapper" id="greeting-card">
+                <div class="card-front">
+                    <h1>Just for You</h1>
+                    <div class="front-decor">✨</div>
+                    <p class="tap-hint">(Tap to Open)</p>
+                </div>
+                <div class="card-inside">
+                    <div class="scroll-content">
+                        <h2>New Year Wishes</h2>
+                        <p>Dear Chinkly,</p>
+                        <p>This year has been an incredible journey with you. From the laughter to the quiet moments,
+                            every second was a treasure.</p>
+                        <p>I hope the coming year brings you:</p>
+                        <ul>
+                            <li>Endless Joy 😊</li>
+                            <li>Success in everything you do 🚀</li>
+                            <li>And lots of love! ❤️</li>
+                        </ul>
+                        <p>Let's make 2026 even better!</p>
+                        <p class="sign-off">With love,<br>Your Secret Admirer</p>
+                        <!-- Add a lot of dummy text to ensure scrollability matches request -->
+                        <br><br><br>
+                        <p class="small">P.S. Scroll down for more...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>There's even more love down here! 👇</p>
+                        <p>Remember that time we...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
